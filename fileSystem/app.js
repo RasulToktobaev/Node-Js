@@ -12,3 +12,10 @@ fs.readFile('./test.txt', 'utf-8', (err, data) => {
 
 
 
+setTimeout(() => {
+    fs.unlink('./files/test2.txt', () => {})
+}, 4000)
+
+setTimeout(() => {
+    fs.rmdir('./files', () => {})
+}, 6000)

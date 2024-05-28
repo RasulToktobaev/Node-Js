@@ -4,16 +4,23 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RasulToktobaev/Node-Js.git"
   },
-  "author": "",
+  "author": "Rasul Toktobaev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RasulToktobaev/Node-Js/issues"
   },
-  "homepage": "https://github.com/RasulToktobaev/Node-Js#readme"
+  "homepage": "https://github.com/RasulToktobaev/Node-Js#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
 }

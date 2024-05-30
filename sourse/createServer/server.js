@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const morgan = require('morgan');
 
 const app = express();
 
@@ -21,10 +22,8 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use((req, res, next) => {
-    console.log('Middleware 2');
-    next();
-})
+//Создание middleware для общедоступной папки
+app.use(express.static('styles'))
 
 app.get('/', (req, res) => {
     res.render(createPath('index'));
